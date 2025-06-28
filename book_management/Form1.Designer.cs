@@ -71,22 +71,25 @@
             // 
             // tblBooks
             // 
+            tblBooks.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            tblBooks.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             tblBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             tblBooks.Location = new Point(12, 139);
             tblBooks.Name = "tblBooks";
             tblBooks.RowHeadersWidth = 51;
-            tblBooks.Size = new Size(498, 294);
+            tblBooks.Size = new Size(858, 294);
             tblBooks.TabIndex = 5;
             tblBooks.CellContentClick += dataGridView1_CellContentClick;
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(596, 27);
+            btnSave.BackColor = SystemColors.GradientActiveCaption;
+            btnSave.Location = new Point(753, 27);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(94, 29);
+            btnSave.Size = new Size(117, 47);
             btnSave.TabIndex = 6;
             btnSave.Text = "Save";
-            btnSave.UseVisualStyleBackColor = true;
+            btnSave.UseVisualStyleBackColor = false;
             btnSave.Click += btnSave_Click;
             // 
             // Form1
@@ -101,7 +104,7 @@
             Controls.Add(label3);
             Controls.Add(label1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Book Manager";
             ((System.ComponentModel.ISupportInitialize)tblBooks).EndInit();
             ResumeLayout(false);
             PerformLayout();

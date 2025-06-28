@@ -27,6 +27,9 @@ namespace book_management
 
             repo.AddBook(book);
             readBooks();
+
+            this.tbName.Text = string.Empty;
+            this.tbAuthor.Text = string.Empty;
             MessageBox.Show("Book added!");
         }
 
