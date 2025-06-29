@@ -96,6 +96,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             ClientSize = new Size(882, 465);
             Controls.Add(btnSave);
             Controls.Add(tblBooks);
